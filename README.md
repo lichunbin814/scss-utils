@@ -85,6 +85,8 @@
 demo
   - [CSS CHALLENGE 100 - Day 2 - Menu Icon Animation](https://codepen.io/lichunbin814/pen/oMKwLZ)
 
+![keyframe-reverse.gif](keyframe-reverse.gif)
+
 ``` scss
 .menu {
   animation: fadeIn-rev 0.7s $cubic-bezier-in forwards;
