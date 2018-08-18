@@ -1,0 +1,48 @@
+@mixin keyframe-reverse(
+  $name , 
+  $value
+  ) {
+  @keyframes #{$name}-rev {
+      @each $position, $change in $value {
+        #{ 100 -$position}% {
+          @each $prop, $val in $change {
+            #{$prop}: #{$val};
+          }
+        }
+      }
+    }
+}
+
+@mixin keyframe-normal(
+  $name , 
+  $value
+  ) {
+   @keyframes #{$name} {
+    @each $position, $change in $value {
+      #{$position}% {
+        @each $prop, $val in $change {
+          #{$prop}: #{$val};
+        }
+      }
+    }
+  }
+}
+
+@mixin keyframe-gen(
+  $name , 
+  $value , 
+  $genReverse
+  ) {
+    
+  @include keyframe-normal(    
+       $name : $name, 
+       $value : $value 
+  );
+    
+  @if ($genReverse) {
+    @include keyframe-reverse(
+       $name : $name, 
+       $value : $value 
+      )
+  }
+}
