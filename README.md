@@ -81,8 +81,6 @@
 ```
 
 **Use Case**
-  
-demo
   - [CSS CHALLENGE 100 - Day 2 - Menu Icon Animation](https://codepen.io/lichunbin814/pen/oMKwLZ)
 
 ![keyframe-reverse.gif](keyframe-reverse.gif)
