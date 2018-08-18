@@ -4,7 +4,7 @@
 
 ### keyframe-gen
 
-> @import _animation.scss
+> @import '_animation.scss';
 
 #### normal
 
