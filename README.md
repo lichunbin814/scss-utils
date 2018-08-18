@@ -40,7 +40,7 @@
 #### with reverse version
 
 ##### Purpose:
-  Reuse written keyframe to achieve reverse animation
+  - Reuse written keyframe to achieve reverse animation
 
 ``` scss
 @include keyframe-gen(
