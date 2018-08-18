@@ -89,7 +89,7 @@
 
 ``` scss
 .menu {
-  animation: fadeIn-rev 0.7s $cubic-bezier-in forwards;
+   animation-name: fadeIn-rev;
 
   &.active {
      animation-name: fadeIn;
