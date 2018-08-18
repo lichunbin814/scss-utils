@@ -38,7 +38,7 @@
 
 #### with reverse version
 
-**Target** Reuse written keyframe to achieve reverse animation
+**Purpose:** Reuse written keyframe to achieve reverse animation
 
 use case : [CSS CHALLENGE 100 - Day 2 - Menu Icon Animation](https://codepen.io/lichunbin814/pen/oMKwLZ)
 
