@@ -40,8 +40,6 @@
 
 **Purpose:** Reuse written keyframe to achieve reverse animation
 
- - use case : [CSS CHALLENGE 100 - Day 2 - Menu Icon Animation](https://codepen.io/lichunbin814/pen/oMKwLZ)
-
 ``` scss
 @include keyframe-gen(
   $name : "fadeIn" ,  
@@ -78,6 +76,21 @@
   0% {
     transform: scale(0);
     opacity: 0;
+  }
+}
+```
+
+**Use Case**
+  
+demo
+  - [CSS CHALLENGE 100 - Day 2 - Menu Icon Animation](https://codepen.io/lichunbin814/pen/oMKwLZ)
+
+``` scss
+.menu {
+  animation: fadeIn-rev 0.7s $cubic-bezier-in forwards;
+
+  &.active {
+     animation-name: fadeIn;
   }
 }
 ```
